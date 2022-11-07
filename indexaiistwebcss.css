@@ -1501,6 +1501,7 @@ position: relative;
 .contact1{
     width: 40%;
     height: 500px;
+    box-sizing: border-box;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0,0,0,.8);
     background: rgb(4, 1, 167);
@@ -1509,19 +1510,26 @@ position: relative;
     width: 100%;
     height: 510px;
 }
+.contactform{
+    width: 100%;
+    box-sizing: border-box;
+}
 .contact2{
     width: 50%;
+    box-sizing: border-box;
     box-shadow: 0 0 10px rgba(0,0,0,.8);
-    border-right: rgb(4, 1, 167) 4px solid;
-    border-left: rgb(4, 1, 167) 4px solid;
+    border-right: rgb(4, 1, 167) 2px solid;
+    border-left: rgb(4, 1, 167) 2px solid;
     overflow: hidden;
     display: flex;
+    padding: 0px 20px;
 }
 .contact22, .contact23{
     width: 50%;
     text-align: center;
     overflow: auto;
     height: 500px;
+    box-sizing: border-box;
 }
 .contact22::-webkit-scrollbar{
     display: none;
@@ -1573,46 +1581,69 @@ position: relative;
     height: 45px;
 }
 .input{
-    width: 85%;
+    width: 95%;
+    box-sizing: border-box;
     height: 40px;
     margin-bottom: 10px;
     outline: none;
     border: none;
-    border-bottom: 2px solid rgb(4, 1, 167);
+    border: 1px solid rgb(4, 1, 167);
     font-size: 1.1rem;
     padding: 0 10px 0 10px;
 }
 .input::-webkit-input-placeholder{
     color: rgb(4, 1, 167);;
-    font-size: 1rem;
+    font-size: .8rem;
     font-weight: bold;
-    position: relative;
+    /* position: relative; */
 }
+/* .input::-webkit-input-placeholder::after{
+    content: '*';
+    color: rgb(4, 1, 167);;
+    font-size: .9rem;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    top: 40%;
+} */
+/* input[type=text]:input-placeholder:after{
+    content:'*';
+    color: red;
+    font-size: 20px;
+} */
 .inputfirst:focus{
-    border-bottom: rgb(2, 117, 2) 2px solid;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(1, 102, 1, 0.733);
+    border-radius: 2px;
 }
 .inputsecond:focus{
-    border-bottom: rgb(2, 117, 2) 2px solid;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(1, 102, 1, 0.733);
+    border-radius: 2px;
 }
 .input1{
-    width: 84%;
+    width: 95%;
+    box-sizing: border-box;
     font-size: 1.2rem;
     outline: none;
-    border: rgb(4, 1, 167) 2px solid;
+    border: rgb(4, 1, 167) 1px solid;
     padding: 0 10px 0 10px;
     transition: .8s ease;
 }
 .input1:focus{
-    border: rgb(2, 117, 2) 2px solid;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(1, 102, 1, 0.733);
+    border-radius: 2px;
 }
 .input1::-webkit-input-placeholder{
     color: rgb(4, 1, 167);;
-    font-size: 1.1rem;
+    font-size: .9rem;
     font-weight: bold;
 }
 .submit{
-    width: 93%;
+    width: 95%;
     height: 40px;
+    box-sizing: border-box;
     font-size: 1.2rem;
     font-weight: bold;
     margin-top: 5px;
@@ -1688,12 +1719,14 @@ position: relative;
 }
 #fo1, #fo2{
     width: 50%;
+    box-sizing: border-box;
     display: flex;
 }
 /* for follow */
 #follow{
     width: 30%;
     text-align: center;
+    box-sizing: border-box;
 }
 #follow h2{
     color: rgba(255,255,255,.3);
@@ -1723,6 +1756,7 @@ position: relative;
 /* for form */
 #form1{
     width: 40%;
+    box-sizing: border-box;
     font-family: sans-serif;
     overflow: hidden;
     color: rgba(255,255,255,.3);
@@ -1735,11 +1769,13 @@ position: relative;
     text-align: center;
 }
 #form1 input{
-    width: 95%;
+    width: 100%;
     height: 30px;
+    box-sizing: border-box;
     padding-left: 10px;
     overflow: hidden;
     outline: none;
+    font-size: .7rem;
     border: 2px solid rgba(255,255,255,.3);
     background: transparent;
     margin-bottom: 10px;
@@ -1747,8 +1783,10 @@ position: relative;
     cursor: pointer;
 }
 #form1 textarea{
-    width: 95%;
+    width: 100%;
     height: 100px;
+    box-sizing: border-box;
+    font-size: .8rem;
     cursor: pointer;
     border: 2px solid rgba(255,255,255,.3);
     color: rgba(255,255,255,.4);
@@ -1757,11 +1795,13 @@ position: relative;
     outline: none;
 }
 #form1sub{
-    width: 101.5% !important;
+    width: 100% !important;
+    box-sizing: border-box;
 }
 /* for link */
 #link1{
     width: 30%;
+    box-sizing: border-box;
     padding: 0px;
     font-family: sans-serif;
     color: rgba(255,255,255,.3);
@@ -1790,6 +1830,7 @@ position: relative;
 /* for service */
 #service{
     width: 40%;
+    box-sizing: border-box;
     font-family: sans-serif;
     padding: 0 10px;
 }
@@ -1818,6 +1859,7 @@ position: relative;
 /* for contact */
 #contact{
     width: 50%;
+    box-sizing: border-box;
     font-family: sans-serif;
     padding: 0 10px;
 }
@@ -2018,15 +2060,48 @@ position: relative;
     display: flex;
     align-items: center;
     overflow: auto;
-    
-
+}
+.anf1{
+    color: #ffffff;
+    text-decoration: none;
+    background: rgb(4, 1, 167);;
+    padding: 5px 15px;
+    border-radius: 3px;
+    font-size: .8rem;
+    font-weight: bold;
+    transition: .5s;
+    animation: applyform 1s infinite ease-in-out;
+}
+@keyframes applyform{
+    0%{
+        background: rgb(4, 1, 167);
+        /* opacity: 1; */
+    }
+    /* 20%{
+        background: rgb(1, 97, 6);
+    } */
+    50%{
+        background: rgb(1, 97, 6);
+    }
+    /* 70%{
+        background: rgb(1, 97, 6);
+    } */
+    100%{
+        background: rgb(4, 1, 167);
+    }
+}
+.applynowform{
+    position: absolute;
+    top: 0;
+    right: 10px;
 }
 .ourcoursescontrol{
     padding: 0 10px 20px 10px;
     width: 100%;
     overflow: auto;
     display: flex;
-    scroll-behavior: smooth;   
+    scroll-behavior: smooth;  
+    gap: 10px; 
 }
 .ourcoursescontrol::-webkit-scrollbar{
     display: none;
@@ -2101,17 +2176,35 @@ position: relative;
 }
 .informationtechnology{
     min-width: 30%;
-    padding: 10px;
+    padding: 10px 5px;
     margin-bottom: 10px;
     background: whitesmoke;
     height: 400px;
     overflow: auto;
     scroll-behavior: smooth;    
     box-shadow: 0px 0px 5px rgba(21, 2, 129, 0.945);
+    box-sizing: border-box;
+}
+.informationtechnology table{
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
 }
 .informationtechnology::-webkit-scrollbar{
-    display: none;
-    scroll-behavior: smooth;
+    /* display: none; */
+    /* scroll-behavior: smooth; */
+}
+.informationtechnology::-webkit-scrollbar{
+    width: 7px;
+}
+.informationtechnology::-webkit-scrollbar-track{
+    /* background: rgba(75, 0, 0, 0.65); */
+    /* border-radius: 50px; */
+}
+.informationtechnology::-webkit-scrollbar-thumb{
+    /* background-image:linear-gradient(to top, rgb(61, 1, 1),rgb(4, 1, 167),rgb(61, 1, 1)); */
+    /* border-radius: 50px; */
+    background: rgb(1, 0, 56);
 }
 /* @media for .informationtechnology */
 @media all and (max-width:950px){
@@ -2127,6 +2220,10 @@ position: relative;
 @media all and (max-width:700px){
     .informationtechnology{
         min-width: 50%;
+    }
+    .informationtechnology::-webkit-scrollbar{
+        display: none;
+        /* scroll-behavior: smooth; */
     }
 }
 @media all and (max-width:600px){
@@ -2150,7 +2247,7 @@ position: relative;
     }
 }
 /* end of @media for .informationtechnology */
-.database{
+/* .database{
     margin-left: 10px;
 }
 .webdevelopment{
@@ -2172,7 +2269,7 @@ position: relative;
 }
 .quickbook{
     margin-left: 10px;
-}
+} */
 #p1, #p2, #p3, #p4{
     text-align: center;
 }
@@ -2230,8 +2327,9 @@ table{
     left: 0;
     bottom: 0;
     right: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     z-index: 100;
+    padding: 0 10px;
     padding-bottom: 20px;
     background: rgb(191, 194, 194);
     width: 100%;
@@ -2256,7 +2354,17 @@ table{
     padding-left: 0;
 }
 .itcoursefinal1::-webkit-scrollbar{
-    display: none;
+    /* display: none; */
+}
+.itcoursefinal1::-webkit-scrollbar{
+    width: 8px;
+}
+.itcoursefinal1::-webkit-scrollbar-track{
+    background: rgba(255, 255, 255, 0.863);
+}
+.itcoursefinal1::-webkit-scrollbar-thumb{
+    background: rgb(1, 0, 56);
+
 }
 .itcoursefinal1 p{
     text-align: center;
@@ -2292,23 +2400,26 @@ table{
     .ittable1{
         width: 90%;
     }
+    .itcoursefinal1::-webkit-scrollbar{
+        display: none;
+    }
 }
 /* @media for itcoursefinal ends */
 /* itcoursefinal ends */
-/* for the apply form */
+/* for the apply now form */
 .applyform{
-    display: none;
+    width: 100%;
+    height: 100%;
     position: fixed;
     box-sizing: border-box;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    width: 100%;
-    height: 100%;
     z-index: 100;
     background: rgba(0, 0, 0, 0.7);
-    overflow: auto;
+    overflow: hidden;
+    display: none;
 }
 .applyform2{
     display: flex;
@@ -2320,9 +2431,11 @@ table{
     width: 30%;
     background: #ffffff;
     box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(255,255,255,.8);
     margin: auto;
     overflow: hidden;
-    padding: 40px 10px 20px 10px;
+    padding: 40px 20px 20px 20px;
     position: relative;
     transition: .5s;
     animation: apply .5s;
@@ -2350,12 +2463,13 @@ table{
 }
 .applyform1 input:focus{
     border: none;
-    box-shadow: 0px 0px 10px 1px rgba(1, 102, 1, 0.733);
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px rgba(1, 102, 1, 0.733);
 }
 .applyform1 input::-webkit-input-placeholder{
     color: rgb(13, 1, 179);
     font-weight: bold;
-    font-size: .9rem;
+    font-size: .8rem;
 }
 .applysubmit{
     width: 100%;
@@ -2374,7 +2488,7 @@ table{
 .applyformclose{
     position: absolute;
     top: -5px; 
-    left: 10px;
+    left: 20px;
     font-size: 2rem;
     color: rgb(187, 3, 3);
     font-weight: bold;

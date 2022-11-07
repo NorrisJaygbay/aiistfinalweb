@@ -23,6 +23,7 @@
                 <div class="closecourse">
                     <a href="index.html">Go Back</a>
                 </div>
+                <div class="applyforadmission3 applynowform"><a href="#" class="afap3 anf1">Apply</a></div>
                 <div id="allbutton1">
                     <button onclick="left()" id="leftbutton">&#10094;</button>
                     <!-- <div id="allbutton2"> -->
@@ -493,7 +494,34 @@
             <!-- maincoursescontrol ends -->
         </div>
         <!-- for the generalcourses overlay ends-->
-
+        <!-- apply now form -->
+        <div class="applyform">
+            <div class="applyform2">
+                 <div class="applyform1">
+                     <span class="applyformclose">&times;</span>
+                     <form action="">
+                         <input type="text" name="fistname" placeholder="First Name &#42;" required><br>
+                         <input type="text" name="lastname" placeholder="Last Name &#42;"><br>
+                         <input type="text" name="course" list="courses" placeholder="Course &#42;"><br>
+                         <datalist id="courses">
+                         <option value="Information Technology">
+                         <option value="Database Technology">
+                         <option value="Software Engineering">
+                         <option value="Web Development">
+                         <option value="Graphic Design">
+                         <option value="Computer Operation">
+                         <option value="Advanced Excel">
+                         <option value="QuickBook Accounting">
+                         </datalist>  
+                         <input type="text" name="number" placeholder="Number(+231) &#42;" required><br>
+                         <input type="email" name="email" placeholder="Email(optional) &#42;"><br>
+                         <button class="applysubmit">Submit</button>
+                     </form>
+                 </div>
+            </div>
+         </div>
+         <!-- apply now form ends -->
+    <script src="indexaiistwebjs.js"></script>
     <script>
         function left(){
         var leftt=document.querySelector(".ourcoursescontrol");
