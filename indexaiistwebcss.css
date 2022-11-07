@@ -2101,11 +2101,17 @@ position: relative;
     overflow: auto;
     display: flex;
     scroll-behavior: smooth;  
-    gap: 10px; 
+    /* gap: 10px;  */
 }
 .ourcoursescontrol::-webkit-scrollbar{
     display: none;
     scroll-behavior: smooth;    
+}
+.margincontrol{
+    margin: 0 10px;
+}
+.margincontrolquickbook{
+    margin-left: 10px;
 }
 .leftandrightcontrol{
     position: relative;
